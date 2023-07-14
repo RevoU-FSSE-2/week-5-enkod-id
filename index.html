@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dpoodles Cafe</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/responsive.css"> 
+    <link rel="stylesheet" href="css/switch.css"> 
+</head>
+<body>
+    <nav>
+        <span class="mobile">
+            <img
+              src="asset/menu.png"
+              alt="Hamburger Icon"
+            />
+        </span>
+
+
+        <span class="relative-container">
+            <img src="asset/Logo-2.png">
+        </span>
+
+
+        <ul class="desktop">
+            <li><a href="">Home</a></li>
+            <li><a href="">Product</a></li>
+            <li><a href="">Contact us</a></li>
+        </ul>
+
+        <span id="dark-mode-switch"></span>
+        <p>Dark Mode</p>
+
+        <label class="switch">
+          <input
+            id="checkbox-dark-mode"
+            onchange="toggleDarkMode()"
+            type="checkbox"
+          />
+          <span class="slider round"></span>
+        </label>
+    </nav>
+    <header>
+        <section id="header">
+            <div class="grid-container-header">
+                <div class="home1">
+                    <h1>Biji kopi adalah permulaan dari setiap kenikmatan dalam secangkir kopi</h1>
+                </div>
+                <div class="home2">
+                    <img src="asset/espresso.png"/>
+                </div>
+            </div>    
+        </section>
+    </header>
+    <main>
+        
+        <section id="about">
+            <div class="grid-container-about">
+                <div class="about1">
+                    <img src="asset/aboutus2.jpg" alt="Coffee" class="coffe"/>
+                </div>
+                <div class="about2">
+                    <h1>Tentang D'poodles Cafe</h1>
+                    <div class="h1border"></div>
+                    <p>Didirikan pada Tahun 2021. D'poodles cafe hadir dengan berbagai varian menu coffe dan buat para pencinta gelato, D'poodles cafe menyediakan dengan berbagai macam rasa dengan rasa unggulan.</p>
+                    <p>D'poodles cafe hadir dengan konsep pet friendly, jadi buat kamu yang mau nongki, kamu bisa ajak anabul kamu sekalian. </p>
+                    
+                </div>
+
+            </div>
+        </section>
+        <section id="product" class="product">
+            <h2>PILIHAN MENU TERBAIK UNTUK KAMU</h2>
+                <p>Kopi dapat menentukan & menyesesuaikan mood yang kamu inginkan
+                D'poodles cafe menyediakan berbagai olahan kopi yang cocok untukmu <br>mengisi hari serta berbagai pelengkap saat menikmati kopi dan harimu!    
+            </p>
+            <div class="grid-container-product">
+                
+                <div class="item1">
+                    <img src="asset/p1.jpg" alt="" class="image"/>
+                </div>
+               
+                <div class="item3">
+                    <img src="asset/p3.jpg" alt=""/>
+                </div>
+                <div class="item4">
+                    <img src="asset/p4.jpg" alt=""/>
+                </div>
+                <div class="item5">
+                    <img src="asset/p5.jpg" alt=""/>
+                </div>
+                
+            </div>
+            <p class="link"><a href="" class="link">JELAJAHI RASAMU SEKARANG</a></p>
+        </section>
+
+       <div class="bg-quote" id="bg-quote">
+       <section id="quote">
+            <div class="grid-container-quote" class="quote">
+                
+                <h1 class="text-quote">Seperti biji kopi yang mengandung potensi untuk menjadi secangkir kopi yang menggugah selera, kita juga memiliki potensi tak terbatas untuk menciptakan kehidupan yang memuaskan dan bermakna</h1>
+            </div>
+            
+        </section>
+        </div>
+        <section id="contactform">
+
+        </section>
+        <section id="contact">
+            <div class="grid-container-maps">
+                <div class="maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.3508153740495!2d106.82659687484082!3d-6.603253164549555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c7b1f2663321%3A0x73408b548c4b649c!2sD&#39;Poodles%20Cafe%20(Coffee%2C%20Gelato%2C%20Waffle%2C%20Croffle%20and%20Dog%20Friendly%20Cafe)!5e0!3m2!1sid!2sid!4v1689214334257!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+               
+                </div>
+            </div>
+            <div class="footer">
+                <p>&copy; dpoodlecafe 2023, All Rights Reserved</p>
+            </div>
+        </section>
+    </main>
+<script>
+        // initial state
+        if (localStorage.getItem("darkMode") === "true") {
+          document.getElementById("checkbox-dark-mode").checked = true;
+          document.body.classList.add("dark-mode");
+        }
+  
+        function toggleDarkMode() {
+          document.body.classList.toggle("dark-mode");
+          if (!document.getElementById("checkbox-dark-mode").checked) {
+            localStorage.setItem("darkMode", false);
+          } else {
+            localStorage.setItem("darkMode", true);
+          }
+        }
+  </script>    
+</body>
+</html>

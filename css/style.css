@@ -1,0 +1,101 @@
+body{
+    font-family: 'Victor Mono', monospace;
+    margin: 0px;
+    padding:0px;
+}
+
+.grid-container-header{
+    background-image: url('../asset/banner.jpg');
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    padding-top:100px;
+    padding-bottom:100px;
+    height: 300px;
+}
+
+.grid-container-header h1{
+    text-align: center;
+    font-size: 30px;
+    color:#fff;
+}
+
+
+
+nav{
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 50px; 
+}
+
+nav > span{
+    display: flex;
+    align-items: center;
+}
+
+nav > span > img{
+    height: 32px;
+    padding:10px;
+}
+
+nav > ul{
+    margin-left:auto;
+    margin-right:20px;
+}
+
+nav > ul > li{
+    display: inline-block;
+}
+
+nav > ul > li > a{
+    text-decoration:none;
+    color: #000;
+    margin-right:20px;
+}
+
+nav > ul > li > a:hover{
+    color:green;
+    border-bottom:2px solid #000;
+}
+
+.relative-container {
+    position: relative;
+}
+
+input[type=text], date, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+
+
+.footer p{
+    text-align:center;
+    font-size:12px;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+
